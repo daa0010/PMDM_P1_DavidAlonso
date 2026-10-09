@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaciados y márgenes (en dp) -->
+    <dimen name="espaciado_pequeno">8dp</dimen>
+    <dimen name="espaciado_medio">16dp</dimen>
+    <dimen name="espaciado_grande">24dp</dimen>
+
+    <!-- Tamaños de elementos (en dp) -->
+    <dimen name="altura_tactil_minima">48dp</dimen>
+    <dimen name="tamano_icono_pequeno">24dp</dimen>
+    <dimen name="elevacion_tarjeta">4dp</dimen>
+    <dimen name="radio_esquinas">12dp</dimen>
+
+    <!-- Tamaños de tipografía (en sp) -->
+    <dimen name="texto_titulo">22sp</dimen>
+    <dimen name="texto_subtitulo">18sp</dimen>
+    <dimen name="texto_cuerpo">14sp</dimen>
+    <dimen name="texto_pie">12sp</dimen>
+
+    <dimen name="altura_imagen_cabecera">180dp</dimen>
+</resources>

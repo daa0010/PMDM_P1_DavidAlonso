@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo_pantalla">PC Configuration</string>
+    <string name="subtitulo_resumen">Build components</string>
+    <string name="presupuesto_total">Total budget: %1$s €</string>
+    <string name="gasto_actual">Spent so far: %1$s €</string>
+    <string name="campo_nombre_pieza">Component name</string>
+    <string name="campo_precio_pieza">Estimated price</string>
+    <string name="boton_anadir">Add component</string>
+    <string name="boton_guardar">Save changes</string>
+    <string name="estado_pendiente">Pending</string>
+    <string name="estado_comprado">Purchased</string>
+    <!-- Traducción del array para el desplegable -->
+    <string-array name="categorias_componentes">
+        <item>Processor (CPU)</item>
+        <item>Graphics Card (GPU)</item>
+        <item>RAM Memory</item>
+        <item>Motherboard</item>
+        <item>Storage (SSD/HDD)</item>
+        <item>Power Supply</item>
+        <item>Case / Chassis</item>
+    </string-array>
+</resources>

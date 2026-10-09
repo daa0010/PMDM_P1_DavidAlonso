@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">PMDM_P1_DavidAlonso</string>
+    <string name="app_name" translatable="false">PCbuild</string>
+    <!-- Títulos y cabeceras -->
+    <string name="titulo_pantalla">Configuración de PC</string>
+    <string name="subtitulo_resumen">Componentes del montaje</string>
+
+    <!-- Textos con parámetros (%1$s) -->
+    <string name="presupuesto_total">Presupuesto total: %1$s €</string>
+    <string name="gasto_actual">Gastado hasta ahora: %1$s €</string>
+
+    <!-- Formularios y botones -->
+    <string name="campo_nombre_pieza">Nombre del componente</string>
+    <string name="campo_precio_pieza">Precio estimado</string>
+    <string name="boton_anadir">Añadir pieza</string>
+    <string name="boton_guardar">Guardar cambios</string>
+    <string name="estado_pendiente">Pendiente</string>
+    <string name="estado_comprado">Comprado</string>
+
+    <!-- String-array para selector de categorías -->
+    <string-array name="categorias_componentes">
+        <item>Procesador (CPU)</item>
+        <item>Tarjeta Gráfica (GPU)</item>
+        <item>Memoria RAM</item>
+        <item>Placa Base</item>
+        <item>Almacenamiento (SSD/HDD)</item>
+        <item>Fuente de Alimentación</item>
+        <item>Caja / Chasis</item>
+    </string-array>
+
 </resources>

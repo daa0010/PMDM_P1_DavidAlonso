@@ -1,19 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/color_fondo"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="@dimen/espaciado_medio">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- CABECERA: Título con estilo propio e icono vectorial -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/espaciado_pequeno">
+
+            <!-- Imagen 1: Vector Asset -->
+            <ImageView
+                android:layout_width="@dimen/tamano_icono_pequeno"
+                android:layout_height="@dimen/tamano_icono_pequeno"
+                android:layout_marginEnd="@dimen/espaciado_pequeno"
+                android:contentDescription="@string/titulo_pantalla"
+                android:src="@drawable/ic_pc_componente"
+                app:tint="@color/color_secundario" />
+
+            <TextView
+                style="@style/EstiloTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="@string/titulo_pantalla" />
+        </LinearLayout>
+
+        <!-- Imagen 2: Mapa de bits (PNG) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_imagen_cabecera"
+            android:layout_marginBottom="@dimen/espaciado_medio"
+            app:cardCornerRadius="@dimen/radio_esquinas"
+            app:cardElevation="@dimen/elevacion_tarjeta">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/subtitulo_resumen"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_setup_pc" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- TARJETA: Métricas de presupuesto con parámetros (%1$s) -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaciado_medio"
+            app:cardBackgroundColor="@color/color_superficie"
+            app:cardCornerRadius="@dimen/radio_esquinas"
+            app:cardElevation="@dimen/elevacion_tarjeta">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/espaciado_medio">
+
+                <TextView
+                    android:id="@+id/tv_presupuesto_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/presupuesto_total"
+                    android:textColor="@color/color_texto_principal"
+                    android:textSize="@dimen/texto_subtitulo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_gasto_actual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espaciado_pequeno"
+                    android:text="@string/gasto_actual"
+                    android:textColor="@color/color_texto_secundario"
+                    android:textSize="@dimen/texto_cuerpo" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- FORMULARIO: Categoría con string-array y campos -->
+        <TextView
+            style="@style/EstiloTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitulo_resumen" />
+
+        <!-- Desplegable usando el string-array de strings.xml -->
+        <Spinner
+            android:id="@+id/sp_categorias"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_tactil_minima"
+            android:layout_marginBottom="@dimen/espaciado_pequeno"
+            android:background="@color/color_superficie"
+            android:entries="@array/categorias_componentes"
+            android:paddingStart="@dimen/espaciado_pequeno"
+            android:paddingEnd="@dimen/espaciado_pequeno" />
+
+        <EditText
+            android:id="@+id/et_nombre_pieza"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_tactil_minima"
+            android:layout_marginBottom="@dimen/espaciado_pequeno"
+            android:background="@color/color_superficie"
+            android:hint="@string/campo_nombre_pieza"
+            android:inputType="text"
+            android:paddingStart="@dimen/espaciado_pequeno"
+            android:paddingEnd="@dimen/espaciado_pequeno"
+            android:textColor="@color/color_texto_principal"
+            android:textColorHint="@color/color_texto_secundario"
+            android:textSize="@dimen/texto_cuerpo" />
+
+        <EditText
+            android:id="@+id/et_precio_pieza"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altura_tactil_minima"
+            android:layout_marginBottom="@dimen/espaciado_medio"
+            android:background="@color/color_superficie"
+            android:hint="@string/campo_precio_pieza"
+            android:inputType="numberDecimal"
+            android:paddingStart="@dimen/espaciado_pequeno"
+            android:paddingEnd="@dimen/espaciado_pequeno"
+            android:textColor="@color/color_texto_principal"
+            android:textColorHint="@color/color_texto_secundario"
+            android:textSize="@dimen/texto_cuerpo" />
+
+        <!-- BOTONES: Usando el segundo estilo propio reutilizado -->
+        <Button
+            android:id="@+id/btn_anadir"
+            style="@style/EstiloBotonAccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaciado_pequeno"
+            android:text="@string/boton_anadir" />
+
+        <Button
+            android:id="@+id/btn_guardar"
+            style="@style/EstiloBotonAccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_guardar" />
+
+    </LinearLayout>
+</ScrollView>

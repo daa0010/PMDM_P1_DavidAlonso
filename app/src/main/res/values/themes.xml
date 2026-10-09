@@ -1,9 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Tema base de la aplicación personalizado con nuestra paleta -->
     <style name="Base.Theme.PMDM_P1_DavidAlonso" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Colores del tema del sistema -->
+        <item name="colorPrimary">@color/color_primario</item>
+        <item name="colorSecondary">@color/color_secundario</item>
+        <item name="android:windowBackground">@color/color_fondo</item>
+        <item name="colorSurface">@color/color_superficie</item>
     </style>
 
     <style name="Theme.PMDM_P1_DavidAlonso" parent="Base.Theme.PMDM_P1_DavidAlonso" />
+
+    <!-- ESTILO PROPIO 1: Títulos de sección -->
+    <style name="EstiloTitulo">
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textColor">@color/color_texto_principal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/espaciado_pequeno</item>
+    </style>
+
+    <!-- ESTILO PROPIO 2: Botones de acción principales -->
+    <style name="EstiloBotonAccion">
+        <item name="android:backgroundTint">@color/color_secundario</item>
+        <item name="android:textColor">@color/color_superficie</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+        <item name="android:minHeight">@dimen/altura_tactil_minima</item>
+        <item name="cornerRadius">@dimen/radio_esquinas</item>
+    </style>
 </resources>

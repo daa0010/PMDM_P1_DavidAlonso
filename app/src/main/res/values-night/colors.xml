@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Paleta funcional para modo noche en PCbuilder -->
+        <color name="color_primario">#38BDF8</color>         <!-- Cian brillante para resaltar en fondos oscuros -->
+        <color name="color_secundario">#38BDF8</color>       <!-- Botones visibles sobre fondo oscuro -->
+        <color name="color_fondo">#0F172A</color>            <!-- Fondo principal azul noche muy oscuro -->
+        <color name="color_superficie">#1E293B</color>       <!-- Fondo para tarjetas y campos de texto -->
+        <color name="color_texto_principal">#F8FAFC</color>  <!-- Texto casi blanco para alto contraste -->
+        <color name="color_texto_secundario">#94A3B8</color> <!-- Gris suave para subtítulos y pistas -->
+        <color name="color_estado_comprado">#22C55E</color>  <!-- Verde adaptado a modo oscuro -->
+        <color name="color_estado_pendiente">#FB923C</color> <!-- Naranja adaptado a modo oscuro -->
+
+</resources>

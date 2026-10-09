@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta funcional para PCbuilder -->
+    <color name="color_primario">#1E293B
+    </color>         <!-- Azul oscuro tecnológico (barras y cabeceras) -->
+    <color name="color_secundario">#0284C7
+    </color>       <!-- Azul cian (botones de acción y enlaces) -->
+    <color name="color_fondo">#F8FAFC
+    </color>            <!-- Fondo claro neutro para la pantalla -->
+    <color name="color_superficie">#FFFFFF
+    </color>       <!-- Fondo para tarjetas (cards) y campos -->
+    <color name="color_texto_principal">#0F172A
+    </color>  <!-- Texto de alto contraste para títulos y cuerpo -->
+    <color name="color_texto_secundario">#64748B
+    </color> <!-- Texto atenuado para etiquetas secundarias -->
+    <color name="color_estado_comprado">#16A34A
+    </color>  <!-- Verde para estado confirmado/comprado -->
+    <color name="color_estado_pendiente">#EA580C</color> <!-- Naranja para piezas pendientes -->
+
 </resources>
