@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
         tvPresupuestoTotal.setText(getString(R.string.presupuesto_total, "1500"));
         tvGastoActual.setText(getString(R.string.gasto_actual, "850"));
 
-        .
+
     }
 }
