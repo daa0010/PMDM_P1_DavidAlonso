@@ -16,6 +16,41 @@ La herramienta permite registrar componentes de hardware organizados por categor
 
 ---
 
+## Estructura del repositorio
+
+```text
+PMDM_P1_DavidAlonso/
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/es/medac/david/app/
+│   │       │   └── MainActivity.java       # Lógica y control del ciclo de vida
+│   │       ├── res/
+│   │       │   ├── drawable/               # Vector Assets e imagen bitmap
+│   │       │   ├── layout/
+│   │       │   │   └── activity_main.xml   # Interfaz declarativa en ConstraintLayout/ScrollView
+│   │       │   ├── mipmap-*/               # Icono adaptativo del lanzador
+│   │       │   ├── values/
+│   │       │   │   ├── colors.xml          # Paleta funcional en modo claro
+│   │       │   │   ├── dimens.xml          # Dimensiones y márgenes estandarizados (dp/sp)
+│   │       │   │   ├── strings.xml         # Recursos de texto en español (por defecto)
+│   │       │   │   └── themes.xml          # Definición de temas y estilos
+│   │       │   ├── values-en/
+│   │       │   │   └── strings.xml         # Localización al inglés (i18n)
+│   │       │   └── values-night/
+│   │       │       └── colors.xml          # Paleta funcional para Modo Oscuro
+│   │       └── AndroidManifest.xml         # Declaración de componentes y launcher
+│   └── build.gradle.kts                    # Dependencias y SDK (minSdk 24, targetSdk 35)
+├── docs/
+│   ├── memoria.pdf                         # Memoria técnica completa de la práctica
+│   └── screenshots/                        # Capturas de ejecución bilingüe y modo oscuro
+├── .gitignore                              # Exclusión de carpetas generadas (build/, .gradle/)
+├── build.gradle.kts                        # Configuración de compilación a nivel de proyecto
+└── README.md                               # Guía principal del repositorio
+```
+
+---
+
 ## Capturas de pantalla
 
 | Español (Por defecto) | Inglés (`values-en`) | Modo Oscuro (`values-night`) |
